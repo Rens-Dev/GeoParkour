@@ -1,9 +1,7 @@
 import { useState } from "react";
 
-type Difficulty = "Noob" | "Hard" | "Extreme" | "Ranked";
-
 interface GameProps {
-  difficulty: Difficulty;
+  difficulty: string;
 }
 
 const difficultyToPhoto = {

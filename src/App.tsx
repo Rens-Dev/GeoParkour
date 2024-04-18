@@ -25,7 +25,7 @@ function App() {
         items={gameModes}
         onItemSelected={handleGameModeChange}
       />
-      <Game difficulty={gameMode} />
+      {gameMode && <Game difficulty={gameMode} />}
     </div>
   );
 }
