@@ -1,0 +1,64 @@
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+$white: #fff !default;
+$gray: #6c757d !default;
+$black: #000 !default;
+
+.btn {
+  color: $white;
+  &:active,
+  &:focus,
+  &:visited {
+    color: $white;
+  }
+}
+
+.dropdown-btn {
+  background-color: $indigo;
+  border: none;
+}
+
+.list-item:hover {
+  background-color: $indigo;
+  color: $white;
+}
+
+.navbar {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: $indigo;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.game-window {
+  width: calc(100% - 10px);
+  height: calc(100% - 80px);
+  position: fixed;
+  right: 5px;
+  top: 75px;
+  left: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-window-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
